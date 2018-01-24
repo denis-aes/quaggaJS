@@ -13,7 +13,7 @@ $(function() {
                 inputStream: { name: "Test",
                     type: "ImageStream",
                     length: 10,
-                    size: 800
+                    size: 640
                 },
                 locator: {
                     patchSize: "medium",
@@ -119,11 +119,11 @@ $(function() {
         },
         state: {
             inputStream: {
-                src: "../test/fixtures/code_128/"
+                src: "../test/fixtures/code_39/"
             },
             decoder : {
                 readers : [{
-                    format: "code_128_reader",
+                    format: "code_39_reader",
                     config: {}
                 }]
             }
