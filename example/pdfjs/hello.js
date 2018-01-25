@@ -30,7 +30,7 @@ function runQuagga(imageSrc) {
 
     var config = {
         locator: {
-            patchSize: "medium",
+            patchSize: "x-large",
             halfSample: true,
             debug: {
                 showCanvas: true,
