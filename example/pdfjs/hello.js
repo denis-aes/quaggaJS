@@ -1,7 +1,7 @@
 'use strict';
 
 function render(){
-    let href = document.location.href;
+    var href = document.location.href;
     if (href.indexOf('?usePdf') > -1){
         renderPdf();
     }
@@ -34,7 +34,9 @@ function renderPdf(){
             };
             page.render(renderContext);
 
-            runQuagga(canvas.toDataURL());
+            var dataUrl = canvas.toDataURL();
+
+            runQuagga(dataUrl);
         });
     });
 }
